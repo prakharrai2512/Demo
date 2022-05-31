@@ -5,8 +5,9 @@ cmake_minimum_required (VERSION 3.8)
 
 project ("Demo")
 
+#set(CMAKE_PREFIX_PATH "C:\\libtorch-win-shared-with-deps-debug-1.11.0+cu113\\libtorch")
 set(CMAKE_PREFIX_PATH "C:\\libtorch-win-shared-with-deps-1.11.0+cu113\\libtorch")
-link_directories("C:\\libtorch-win-shared-with-deps-1.11.0+cu113\\libtorch\\include" "C:\\libtorch-win-shared-with-deps-1.11.0+cu113\\libtorch\\include\\torch\\csrc\\api\\include")
+#link_directories("C:\\libtorch-win-shared-with-deps-1.11.0+cu113\\libtorch\\include" "C:\\libtorch-win-shared-with-deps-1.11.0+cu113\\libtorch\\include\\torch\\csrc\\api\\include")
 
 find_package(Torch REQUIRED)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${TORCH_CXX_FLAGS}")
